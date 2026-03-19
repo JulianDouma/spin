@@ -311,6 +311,11 @@ download_spin_template_repository() {
         template_type=official
         TEMPLATE_REPOSITORY="serversideup/spin-template-nuxt"
         ;;
+      symfony)
+        template_type=external
+        TEMPLATE_REPOSITORY="JulianDouma/spin-template-symfony"
+        branch="${branch:-"main"}"
+        ;;
       skeleton)
         template_type=official
         TEMPLATE_REPOSITORY="serversideup/spin-template-skeleton"
